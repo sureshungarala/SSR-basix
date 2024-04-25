@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Server render by <%= nAme %>
+ </title>
+</head>
+
+<body>
+ <div>This server rendering is trivial. Made by <%= nAme %>
+ </div>
+ <hr />
+ <button id="add">Add</button>
+ <label>
+  <h3>Total items</h3>
+  <ul id="items"></ul>
+ </label>
+ <hr />
+ <input type="text" id="search" aria-label="search" placeholder="Enter name" />
+ <button id="searchBtn">Search</button>
+ <label>
+  <h3>Filtered items</h3>
+  <ul id="filtered-items"></ul>
+ </label>
+ <h3>SSR by Node and ejs.</h3>
+ <script src="/js"></script>
+ <script>alert('no CSP')</script>
+</body>
+
+</html>
